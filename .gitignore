@@ -1,0 +1,21 @@
+# Node.js dependencies
+client/node_modules/
+server/node_modules/
+
+# Environment files
+client/.env
+server/.env
+
+# Lock files
+client/package-lock.json
+server/package-lock.json
+
+# Database files
+server/mysql.sql
+server/database.db
+
+# Uploads (generated files)
+server/uploads/
+
+# Images in public (optional, if they are large/generated)
+client/public/images/
