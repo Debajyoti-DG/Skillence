@@ -1,35 +1,36 @@
-// This script initializes the database. Run `node database.js` once.
-const sqlite3 = require('sqlite3').verbose();
+// This script is for setting up your LOCAL database for testing.
+// Production database is managed by Render.
+const { Pool } = require('pg');
+require('dotenv').config(); // Use dotenv for local credentials
 
-// Create a new database file named 'database.db'
-const db = new sqlite3.Database('./database.db', (err) => {
-    if (err) {
-        console.error(err.message);
-    }
-    console.log('Connected to the SQLite database.');
+// Make sure you have a .env file locally with your database URL
+// Example: DATABASE_URL="postgres://user:password@localhost:5432/mydatabase"
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
 });
 
-// Create the 'contacts' table
-db.serialize(() => {
-    db.run(`CREATE TABLE IF NOT EXISTS contacts (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        name TEXT NOT NULL,
-        email TEXT NOT NULL,
-        jobRole TEXT NOT NULL,
-        description TEXT NOT NULL,
-        resume TEXT NOT NULL, -- stores file path
-        timestamp DATETIME DEFAULT CURRENT_TIMESTAMP
-    )`, (err) => {
-        if (err) {
-            return console.error(err.message);
-        }
-        console.log("Successfully created 'contacts' table.");
-    });
-});
+const createTableQuery = `
+  CREATE TABLE IF NOT EXISTS applications (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    job_role VARCHAR(255) NOT NULL,
+    resume_url TEXT NOT NULL,
+    submitted_at TIMESTAMPTZ DEFAULT NOW()
+  );
+`;
 
-db.close((err) => {
-    if (err) {
-        console.error(err.message);
-    }
-    console.log('Closed the database connection.');
-});
+async function setupDatabase() {
+  const client = await pool.connect();
+  try {
+    await client.query(createTableQuery);
+    console.log("Successfully created 'applications' table.");
+  } catch (err) {
+    console.error('Error creating table:', err);
+  } finally {
+    client.release();
+    pool.end();
+  }
+}
+
+setupDatabase();
