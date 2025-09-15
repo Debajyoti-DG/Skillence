@@ -18,4 +18,4 @@ server/database.db
 server/uploads/
 
 # Images in public (optional, if they are large/generated)
-client/public/images/
+#client/public/images/

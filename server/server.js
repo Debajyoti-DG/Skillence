@@ -49,6 +49,10 @@ const db = new sqlite3.Database('./database.db', sqlite3.OPEN_READWRITE, (err) =
     console.log('Connected to the SQLite database.');
 });
 
+// FIX 1: Add a root GET route to confirm the server is running
+app.get('/', (req, res) => {
+  res.send('Skillence backend is running!');
+});
 // API Endpoint to handle contact form submission with file upload
 app.post('/api/contact', upload.single('resume'), (req, res) => {
     const { name, email, jobRole, description } = req.body;
