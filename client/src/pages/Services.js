@@ -34,7 +34,7 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-icon">📈</div>
-          <h3>Management Solutions</h3>
+          <h3>Management Services Provider</h3>
           <p>Streamlining your training and development initiatives for maximum impact.</p>
           <ul className="service-list">
             <li>Organizing and managing training programs for companies.</li>

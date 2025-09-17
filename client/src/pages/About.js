@@ -22,7 +22,7 @@ const About = () => {
       <div className="about-section">
         <h2>Our Vision</h2>
         <p>
-          To be a trusted partner for career growth and workforce solutions in the IT and corporate ecosystem.
+          To be a trusted partner for career growth and workforce management in the IT and corporate ecosystem.
         </p>
       </div>
       
@@ -53,7 +53,7 @@ const About = () => {
               <li>Key roles in LIONS CLUB INTERNATIONAL (City of Glory): Service Chairperson & Director (2021-23), Treasurer (2023-24), and Secretary (2024-25).</li>
               <li>Member of "Protection for Democratic Human Rights Of India" and "National Human Rights Convener Of India".</li>
               <li>District Chairperson of “National Human Rights Society”.</li>
-              <li>Associate Member of Press Club (South 24 Parganas) and Member of Indian Journalists’ Association (IJA).</li>
+              <li>Associate Member of Press Club (South 24 Parganas) and Member of Indian Journalists’ Association (IJA) - Editorial manager in a small newspaper.</li>
               <li>Stood ninth in the sub-junior chess championship.</li>
               <li>Possesses an aptitude for vocal music.</li>
             </ul>
