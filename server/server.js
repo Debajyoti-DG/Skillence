@@ -72,14 +72,15 @@ app.post('/api/apply', upload.single('resume'), async (req, res) => {
     const resumeUrl = uploadResult.secure_url;
 
     // Step 2: Save application details to PostgreSQL
-    const { name, email, jobRole } = req.body;
-    const sql = `
-      INSERT INTO applications (name, email, job_role, resume_url) 
-      VALUES ($1, $2, $3, $4) RETURNING id;
-    `;
-    const values = [name, email, jobRole, resumeUrl];
-    
-    const dbResult = await pool.query(sql, values);
+    const { name, email, jobRole, description } = req.body; 
+const sql = `
+  INSERT INTO applications (name, email, job_role, resume_url, description) 
+  VALUES ($1, $2, $3, $4, $5) RETURNING id; -- Added description and $5
+`;
+// ADD description to the values array
+const values = [name, email, jobRole, resumeUrl, description]; 
+
+const dbResult = await pool.query(sql, values);
     
     res.status(201).json({ 
       success: true, 
