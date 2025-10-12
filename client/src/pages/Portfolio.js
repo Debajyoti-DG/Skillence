@@ -2,10 +2,10 @@ import React from 'react';
 
 const Portfolio = () => {
   return (
-    <div>
+    <div data-aos="fade-up">
       <h1>Our Future Focus</h1>
       
-      <div className="portfolio-section">
+      <div className="portfolio-section" data-aos="fade-up">
         <h2>What We Aim to Build</h2>
         <p>
           Our journey has just begun. We are working diligently towards building a portfolio that reflects:
@@ -17,7 +17,7 @@ const Portfolio = () => {
         </ul>
       </div>
 
-      <div className="portfolio-section">
+      <div className="portfolio-section" data-aos="fade-up">
         <h2>What's on the Horizon</h2>
         <p>Instead of showing what we’ve done, here is what we’re preparing to deliver.</p>
         

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Services = () => {
   return (
-    <div>
+    <div data-aos="fade-up">
       <h1>Our Services</h1>
       <p>
         We provide a comprehensive range of services designed to bridge the gap between education and industry, empowering both individuals and corporations in Kolkata and beyond.
@@ -10,7 +10,7 @@ const Services = () => {
       
       
 
-      <div className="services-container">
+      <div className="services-container" data-aos="fade-up">
         
         <div className="service-card">
           <div className="service-icon">💻</div>

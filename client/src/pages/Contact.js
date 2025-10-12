@@ -5,6 +5,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', jobRole: '', description: '' });
   const [resume, setResume] = useState(null);
   const [status, setStatus] = useState('');
+  const [loading, setLoading] = useState(false);
   
   // UX IMPROVEMENT: State to show the name of the chosen file
   const [fileName, setFileName] = useState('No file chosen (PDF, 1MB Max)');
@@ -29,6 +30,7 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     setStatus('Sending application...');
 
     // Client-side validation
@@ -75,10 +77,11 @@ const Contact = () => {
       console.error('Submission Error:', error);
       setStatus('An error occurred. Please check your network and try again.');
     }
+    setLoading(false);
   };
 
   return (
-    <div>
+    <div data-aos="fade-up">
       <h1>Join Our Team</h1>
       <p>We'd love to hear from you. Apply for a job below.</p>
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -112,7 +115,9 @@ const Contact = () => {
           />
           <label htmlFor="resume" className="file-input-label">{fileName}</label>
         </div>
-        <button type="submit" className="submit-btn">Send Application</button>
+        <button type="submit" className="submit-btn" disabled={loading}>
+          {loading ? <span className="spinner"></span> : 'Send Application'}
+        </button>
       </form>
       {status && <p style={{ marginTop: '1.5rem' }}>{status}</p>}
     </div>

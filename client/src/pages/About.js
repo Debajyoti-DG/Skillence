@@ -5,28 +5,28 @@ const About = () => {
     <div>
       <h1>About Skillence</h1>
       
-      <div className="about-section">
+      <div className="about-section" data-aos="fade-up">
         <h2>Our Story & Credibility</h2>
         <p>
           <strong>Skillence</strong> is a leading software training and management services provider dedicated to nurturing talent and supporting companies with skilled manpower.
         </p>
       </div>
 
-      <div className="about-section">
+      <div className="about-section" data-aos="fade-up">
         <h2>Our Mission</h2>
         <p>
           Our mission is to empower individuals with job-ready skills and enable businesses to access the right talent.
         </p>
       </div>
 
-      <div className="about-section">
+      <div className="about-section" data-aos="fade-up">
         <h2>Our Vision</h2>
         <p>
           To be a trusted partner for career growth and workforce management in the IT and corporate ecosystem.
         </p>
       </div>
       
-      <div className="about-section">
+      <div className="about-section" data-aos="fade-up">
         <h2>Why Choose Skillence?</h2>
         <ul className="styled-list">
           <li>Industry-aligned courses</li>
@@ -36,7 +36,7 @@ const About = () => {
         </ul>
       </div>
 
-      <div className="about-section founder-section">
+      <div className="about-section founder-section" data-aos="fade-up">
         <h2>Meet the Founder</h2>
         <div className="founder-profile">
           <img 
