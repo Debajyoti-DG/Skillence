@@ -25,9 +25,10 @@ body {
     padding: 1rem 5%;
     background-color: var(--bg-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid var(--secondary-color);
+    gap: 2rem;
 }
 
 .logo {
@@ -399,6 +400,9 @@ body {
 .hamburger::after { top: 10px; }
 
 @media (max-width: 900px) {
+  .header {
+    justify-content: space-between;
+  }
   .nav-toggle {
     display: block;
   }
@@ -439,4 +443,95 @@ body {
 }
 @keyframes spin {
   to { transform: rotate(360deg); }
+}
+
+/* --- Professional Footer --- */
+.footer {
+    padding: 3rem 5%;
+    background-color: var(--secondary-color); /* A slightly different dark shade for contrast */
+    border-top: 1px solid #333;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.footer-brand {
+    flex: 2; /* Takes more space */
+}
+
+.footer-brand .logo {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: #888;
+    line-height: 1.5;
+}
+
+.footer-links, .footer-social {
+    flex: 1; /* Takes less space */
+}
+
+.footer-links h4, .footer-social h4 {
+    font-family: var(--font-heading);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #444;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.social-icon-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--bg-color);
+}
+
+/* Responsive adjustments for the new footer */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
