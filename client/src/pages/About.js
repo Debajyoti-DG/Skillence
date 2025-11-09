@@ -8,9 +8,14 @@ const About = () => {
       <div className="about-section" data-aos="fade-up">
         <h2>Our Story & Credibility</h2>
         <p>
-          <strong>Skillence</strong> is a leading software training and management services provider dedicated to nurturing talent and supporting companies with skilled manpower.
+          <strong>Skillence</strong> is a leading software training and management services provider dedicated to nurturing talent and helping businesses get access to ready-to-deploy talent.
+        </p>
+        <p>
+          We have partnered with <i>Scalemaster Adlam Private Limited (Hyderabad)</i> to deliver manpower solutions in <strong>Germany</strong>, <strong>Netherlands</strong>, <strong>Dubai</strong>, <strong>UK</strong> — and now expanding across <strong> India</strong>.
         </p>
       </div>
+
+      <hr className="section-divider" />
 
       <div className="about-section" data-aos="fade-up">
         <h2>Our Mission</h2>
@@ -19,6 +24,8 @@ const About = () => {
         </p>
       </div>
 
+      <hr className="section-divider" />
+
       <div className="about-section" data-aos="fade-up">
         <h2>Our Vision</h2>
         <p>
@@ -26,15 +33,19 @@ const About = () => {
         </p>
       </div>
       
+      <hr className="section-divider" />
+
       <div className="about-section" data-aos="fade-up">
         <h2>Why Choose Skillence?</h2>
         <ul className="styled-list">
-          <li>Industry-aligned courses</li>
+          <li>Industry-oriented training</li>
           <li>Experienced trainers</li>
-          <li>Tailored manpower supply</li>
-          <li>Corporate training programs</li>
+          <li>Strong industry partnership ecosystem</li>
+          <li>Global manpower deployment experience</li>
         </ul>
       </div>
+
+      <hr className="section-divider" />
 
       <div className="about-section founder-section" data-aos="fade-up">
         <h2>Meet the Founder</h2>

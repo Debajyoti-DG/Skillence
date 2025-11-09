@@ -29,6 +29,9 @@ body {
     align-items: center;
     border-bottom: 1px solid var(--secondary-color);
     gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -534,4 +537,110 @@ body {
         align-items: center;
         text-align: center;
     }
+}
+
+/* --- Success Stories Section --- */
+.success-stories-section {
+margin-bottom: 4rem;
+padding: 3rem 2rem;
+background-color: var(--secondary-color); /* A darker background to make it stand out */
+border-radius: 10px;
+text-align: center;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.success-stories-section h2 {
+font-family: var(--font-heading);
+font-size: 2.8rem;
+color: var(--primary-color);
+margin-bottom: 1rem;
+text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.success-stories-section .tagline {
+font-size: 1.3rem;
+color: #ccc;
+font-style: italic;
+margin-bottom: 2rem;
+}
+
+.success-stories-section .partnership-highlight {
+font-size: 1.5rem;
+font-weight: bold;
+color: var(--text-color);
+margin-bottom: 1.5rem;
+}
+
+.success-stories-section p {
+font-size: 1.1rem;
+color: #b0b0b0;
+max-width: 700px;
+margin: 0.5rem auto 1.5rem auto;
+}
+
+.country-flags-container {
+display: flex;
+justify-content: center; /* Centers the flags horizontally */
+align-items: center;
+gap: 1.5rem; /* Space between flags */
+margin-top: 2.5rem;
+flex-wrap: wrap; /* Allows flags to wrap on smaller screens */
+}
+
+.country-flag {
+width: 60px; /* Adjust flag size as needed */
+height: 60px;
+border-radius: 50%; /* Make flags round */
+object-fit: cover; /* Ensure flags look good in round shape */
+border: 3px solid var(--primary-color);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.country-flag:hover {
+transform: scale(1.1) rotate(5deg); /* Slight enlarge and rotate on hover */
+box-shadow: 0 8px 15px rgba(212, 175, 55, 0.6); /* More prominent shadow on hover */
+}
+/* End Success Stories Section */
+
+/* --- Key Highlights (Home Page Chips) --- */
+.key-highlights-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem; /* Space between chips */
+margin-top: 3.5rem; /* Space below the main paragraph */
+padding-bottom: 2rem; /* Extra space at the bottom */
+}
+
+.highlight-chip {
+background-color: var(--secondary-color);
+border: 1px solid #333; /* Subtle border */
+color: var(--text-color);
+padding: 0.7rem 1.4rem;
+border-radius: 30px; /* Fully rounded 'chip' style */
+font-size: 1rem;
+font-weight: 500;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-chip:hover {
+transform: translateY(-4px);
+color: var(--primary-color);
+border-color: var(--primary-color);
+box-shadow: 0 6px 15px rgba(212, 175, 55, 0.2);
+}
+/* --- End Key Highlights --- */
+
+/* --- Section Divider --- */
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, 
+    rgba(255, 255, 255, 0), 
+    var(--secondary-color), /* Use a theme color */
+    rgba(255, 255, 255, 0)
+  );
+  margin: 3rem 0;
 }

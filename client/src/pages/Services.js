@@ -24,11 +24,12 @@ const Services = () => {
 
         <div className="service-card">
           <div className="service-icon">👥</div>
-          <h3>Manpower Services</h3>
+          <h3>Global Manpower Services</h3>
           <p>Connecting talent with opportunity is at the heart of what we do.</p>
           <ul className="service-list">
             <li>Sourcing skilled professionals for your company projects.</li>
             <li>Providing dedicated workforce support for short-term or long-term needs.</li>
+            <li>International manpower deployment in Germany, Netherlands, Dubai, UK & India (in partnership with Scalemaster Adlam Pvt Ltd).</li>
           </ul>
         </div>
 
@@ -39,6 +40,7 @@ const Services = () => {
           <ul className="service-list">
             <li>Organizing and managing training programs for companies.</li>
             <li>Offering end-to-end skill development planning and execution.</li>
+            <li>Tailored solutions designed to match organizational goals.</li>
           </ul>
         </div>
 
