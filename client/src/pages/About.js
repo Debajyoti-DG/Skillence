@@ -17,6 +17,37 @@ const About = () => {
 
       <hr className="section-divider" />
 
+      {/* --- NEW EMPHATIC SECTION: About Scalemaster --- */}
+      <div className="about-section highlight-partner" data-aos="fade-up">
+        <h2>Strategic Partner</h2>
+        
+        <div className="partner-layout">
+            {/* Logo Column */}
+            <div className="partner-logo-box">
+                <img 
+                    src="/images/adlam-logo.png" 
+                    alt="Scalemaster Adlam Pvt. Ltd. Logo" 
+                    className="adlam-logo"
+                />
+            </div>
+
+            {/* Text Column */}
+            <div className="partner-profile">
+                <h3>Scalemaster Adlam Pvt. Ltd.</h3>
+                <p className="partner-subtitle">Engineering & Manpower Consultants (Hyderabad)</p>
+                
+                <p>
+                    A veteran in the manpower consultancy sector, Scalemaster Adlam brings decades of operational excellence and a robust network for deploying skilled professionals globally.
+                </p>
+                <p>
+                    Their track record includes high-level manpower supply for major international projects, validated by clients such as <strong>WeVee</strong>. This partnership combines Skillence's emerging prospects with Scalemaster's established global deployment logistics.
+                </p>
+            </div>
+        </div>
+      </div>
+
+      <hr className="section-divider" />
+      
       <div className="about-section" data-aos="fade-up">
         <h2>Our Mission</h2>
         <p>

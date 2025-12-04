@@ -16,6 +16,7 @@ return (
     <p>
         This partnership marks a strong validation of our capabilities in sourcing, preparing and supplying reliable manpower for global corporate environments.
     </p>
+
     <div className="country-flags-container">
       <img src="/images/flags/germany.png" alt="Germany Flag" className="country-flag" title="Germany" />
       <img src="/images/flags/netherlands.png" alt="Netherlands Flag" className="country-flag" title="Netherlands" />
@@ -23,6 +24,63 @@ return (
       <img src="/images/flags/uk.png" alt="United Kingdom Flag" className="country-flag" title="United Kingdom" />
       <img src="/images/flags/india.png" alt="India Flag" className="country-flag" title="India" />
     </div>
+
+    {/* --- NEW: Document Verification Section (PDF Version) --- */}
+        <div className="documents-container">
+            <h3>Partnership Credentials</h3>
+            <div className="doc-grid">
+                
+                {/* Document 1: Collaboration Agreement */}
+                <div className="doc-card">
+                    <div className="doc-icon-wrapper">
+                        {/* SVG Icon for PDF */}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="60" height="60">
+                            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                        </svg>
+                    </div>
+                    <div className="doc-info">
+                        <h4>Official Collaboration</h4>
+                        <p>Skillence & Scalemaster Adlam</p>
+                        <a 
+                            href="images/documents/collab-agreement.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="view-pdf-btn"
+                        >
+                            View Agreement
+                        </a>
+                    </div>
+                </div>
+
+                {/* Document 2: WeVee Recommendation */}
+                <div className="doc-card">
+                    <div className="doc-icon-wrapper">
+                        {/* SVG Icon for PDF */}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="60" height="60">
+                            <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                        </svg>
+                    </div>
+                    <div className="doc-info">
+                        <h4>Client Commendation</h4>
+                        <p>LoR from WeVee (Client)</p>
+                        <a 
+                            href="images/documents/wevee-lor.pdf" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="view-pdf-btn"
+                        >
+                            View Letter
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        {/* --- END NEW SECTION --- */}
+
+
+
+    
   </div>
   {/* End New Success Stories Section */}
 
