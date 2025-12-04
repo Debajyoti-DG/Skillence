@@ -129,9 +129,12 @@ body {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
+    width: 100%; /* Forces element to fill the container */
+    box-sizing: border-box; /* Ensures padding doesn't add extra width */
     background-color: var(--secondary-color);
-    border: 1px solid var(--black-olive); /* Subtle border matching theme */
+    border: 1px solid var(--secondary-color); /* Adjusted to match your theme */
     border-radius: 5px;
     padding: 0.8rem;
     color: var(--text-color);
@@ -140,8 +143,14 @@ body {
     transition: border-color 0.3s ease;
 }
 
+/* Ensure the dropdown arrow is white/visible on dark background */
+.form-group select {
+    cursor: pointer;
+}
+
 .form-group input:focus,
-.form-group textarea:focus {
+.form-group textarea:focus,
+.form-group select:focus { /* <--- Added select here */
     outline: none;
     border-color: var(--primary-color);
 }
@@ -160,7 +169,7 @@ body {
 }
 
 .submit-btn:hover {
-    background-color: #d14e1f; /* Slightly darker shade of flame/primary */
+    background-color: #f08b27; /* Slightly darker shade of flame/primary */
     transform: translateY(-2px);
 }
 
