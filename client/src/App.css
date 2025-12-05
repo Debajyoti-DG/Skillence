@@ -807,3 +807,106 @@ box-shadow: 0 6px 15px rgba(212, 175, 55, 0.2);
         display: block;
     }
 }
+
+/* --- Footer TAN Number --- */
+.tan-number {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.tan-number strong {
+  color: var(--primary-color);
+}
+
+/* --- Founder/Business Contact Card --- */
+.founder-contact-card {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto 3rem auto; /* Centered with space below */
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  box-shadow: 0 4px 15px rgba(235, 94, 40, 0.2); /* Flame colored shadow */
+  transition: transform 0.3s ease;
+}
+
+.founder-contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.founder-contact-icon {
+  font-size: 3rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder-contact-text h3 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.founder-contact-text p {
+  color: var(--text-muted);
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+}
+
+.founder-phone-link {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.founder-phone-link:hover {
+  background-color: #d14e1f;
+  color: #fff;
+}
+
+/* Mobile responsive adjustment for the card */
+@media (max-width: 600px) {
+  .founder-contact-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+}
+
+/* --- Founder Connect Button (About Page) --- */
+.founder-connect-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.8rem;
+    background-color: var(--primary-color); /* Flame color */
+    color: var(--bg-color); /* Dark text */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: var(--font-body);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.founder-connect-btn:hover {
+    background-color: #f08b27; /* Slightly darker flame */
+    color: #fff; /* White text on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(235, 94, 40, 0.3);
+}

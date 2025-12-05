@@ -23,7 +23,12 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-brand">
                     <h3 className="logo">Skillence</h3>
-                    <p>&copy; {currentYear} Skillence. All Rights Reserved. <br/> Kolkata, West Bengal, India.</p>
+                    <p>
+                        &copy; {currentYear} Skillence. All Rights Reserved. <br/> 
+                        Kolkata, West Bengal, India.
+                    </p>
+                    {/* --- NEW: Company TAN Number --- */}
+                    <p className="tan-number">Company TAN: <strong>CALA41445F</strong></p>
                 </div>
 
                 <div className="footer-links">

@@ -1,6 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // <--- Import Link here
 
 const About = () => {
+
+  const handleLinkClick = () => {
+        window.scrollTo(0, 0);
+    };
   return (
     <div>
       <h1>About Skillence</h1>
@@ -17,12 +22,11 @@ const About = () => {
 
       <hr className="section-divider" />
 
-      {/* --- NEW EMPHATIC SECTION: About Scalemaster --- */}
+      {/* --- Strategic Partner Section --- */}
       <div className="about-section highlight-partner" data-aos="fade-up">
         <h2>Strategic Partner</h2>
         
         <div className="partner-layout">
-            {/* Logo Column */}
             <div className="partner-logo-box">
                 <img 
                     src="/images/adlam-logo.png" 
@@ -31,7 +35,6 @@ const About = () => {
                 />
             </div>
 
-            {/* Text Column */}
             <div className="partner-profile">
                 <h3>Scalemaster Adlam Pvt. Ltd.</h3>
                 <p className="partner-subtitle">Engineering & Manpower Consultants (Hyderabad)</p>
@@ -99,6 +102,12 @@ const About = () => {
               <li>Stood ninth in the sub-junior chess championship.</li>
               <li>Possesses an aptitude for vocal music.</li>
             </ul>
+
+            {/* --- NEW BUTTON: Connect with Founder --- */}
+            <Link to="/contact" onClick={handleLinkClick} className="founder-connect-btn">
+                Connect with the Founder →
+            </Link>
+
           </div>
         </div>
       </div>
