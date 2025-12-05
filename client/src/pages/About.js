@@ -16,7 +16,7 @@ const About = () => {
           <strong>Skillence</strong> is a leading software training and management services provider dedicated to nurturing talent and helping businesses get access to ready-to-deploy talent.
         </p>
         <p>
-          We have partnered with <i>Scalemaster Adlam Private Limited (Hyderabad)</i> to deliver manpower solutions in <strong>Germany</strong>, <strong>Netherlands</strong>, <strong>Dubai</strong>, <strong>UK</strong> — and now expanding across <strong> India</strong>.
+          We have partnered with <i>Scalemaster Adlam Private Limited (Hyderabad)</i> to deliver management services, such as manpower supply in <strong>Germany</strong>, <strong>Netherlands</strong>, <strong>Dubai</strong>, <strong>UK</strong> — and now expanding across <strong> India</strong>.
         </p>
       </div>
 
@@ -95,7 +95,7 @@ const About = () => {
             <ul className="styled-list">
               <li>Running a Computer Software Training Institute for the last 32 years.</li>
               <li>L1-A working Visa Holder of America; worked for a Fortune 500 company in the USA as a Functional Director.</li>
-              <li>Key roles in LIONS CLUB INTERNATIONAL (City of Glory): Service Chairperson & Director (2021-23), Treasurer (2023-24), and Secretary (2024-25).</li>
+              <li>Key roles in LIONS CLUB INTERNATIONAL (City of Glory): Service Chairperson & Director (2021-23), Treasurer (2023-24), and Secretary (2025-26).</li>
               <li>Member of "Protection for Democratic Human Rights Of India" and "National Human Rights Convener Of India".</li>
               <li>District Chairperson of “National Human Rights Society”.</li>
               <li>Associate Member of Press Club (South 24 Parganas) and Member of Indian Journalists’ Association (IJA) - Editorial manager in a small newspaper.</li>
